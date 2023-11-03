@@ -1,0 +1,31 @@
+{
+  "name": "movie-finder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "yarn install && nuxi dev --open",
+    "build": "nuxi build --modern=server",
+    "start": "nuxi start --modern=server",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.6",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/tailwindcss": "^6.8.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "element-plus": "^2.4.1",
+    "eslint": "^8.52.0",
+    "nuxt": "^3.8.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.7",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "nuxt-swiper": "^1.2.2"
+  }
+}

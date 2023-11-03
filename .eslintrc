@@ -1,0 +1,14 @@
+{
+    "extends": [
+      "@nuxtjs/eslint-config-typescript"
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": [
+        "off"
+      ],
+      "quotes": [2, "double", { "avoidEscape": true }],
+      "comma-dangle": [2, "always-multiline"],
+      "semi": [2, "always"]
+
+    }
+  }

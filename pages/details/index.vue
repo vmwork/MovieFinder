@@ -1,0 +1,17 @@
+<template>
+  <div class="flex justify-center mt-20">
+    <CardsFilmDetail
+      is-details
+      v-for="(film, index) in films"
+      :key="index"
+      :film="film"
+    />
+  </div>
+</template>
+
+<script lang="ts" setup>
+definePageMeta({
+  middleware: "is-has-films",
+});
+const { films } = useGetFilms();
+</script>
