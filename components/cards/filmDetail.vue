@@ -1,5 +1,5 @@
 <template>
-  <div class="card-wrapper flex border-4 rounded-md">
+  <div class="card-wrapper mb-4 flex border-4 rounded-md">
     <div class="card-poster p-4">
       <img :src="film.Poster" alt="" />
     </div>

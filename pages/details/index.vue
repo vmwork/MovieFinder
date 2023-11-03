@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center mt-20">
+  <div class="flex flex-wrap justify-center mt-20">
     <CardsFilmDetail
       is-details
       v-for="(film, index) in films"
