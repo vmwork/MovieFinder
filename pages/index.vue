@@ -1,10 +1,15 @@
 <template>
   <div>
     <div class="flex justify-center">
-      <el-input v-model="input" class="p-20 max-w-5xl" placeholder="Search" />
+      <el-input
+        v-model="input"
+        class="p-20 max-w-5xl"
+        placeholder="Search"
+        @keyup.enter="getFilms(input)"
+      />
     </div>
     <span class="flex justify-center">{{ errorInput }}</span>
-    <span v-if="films.Response !== false" class="flex justify-center">{{
+    <span v-if="films.Response === 'False'" class="flex justify-center">{{
       films.Error
     }}</span>
 

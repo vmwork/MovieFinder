@@ -1,7 +1,10 @@
 <template>
-  <div class="card-wrapper mb-4 flex border-4 rounded-md">
-    <div class="card-poster p-4">
-      <img :src="film.Poster" alt="" />
+  <div
+    class="card mb-4 flex border-4 rounded-md"
+    :class="{ 'card-wrapper': isDetails }"
+  >
+    <div class="p-4">
+      <img class="card-poster p-4" :src="film.Poster" alt="" />
     </div>
     <div class="card-description p-4">
       <div class="p-2 font-bold">{{ film.Title }}</div>
@@ -31,3 +34,12 @@ const props = defineProps({
 const { isDetails } = props;
 const { film } = props;
 </script>
+
+<style lang="scss" scoped>
+.card-wrapper {
+  width: 60%;
+}
+.card {
+  min-height: 600px;
+}
+</style>

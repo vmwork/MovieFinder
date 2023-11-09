@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-wrap justify-center mt-20">
     <CardsFilmDetail
-      is-details
       v-for="(film, index) in films"
       :key="index"
       :film="film"
+      is-details
     />
   </div>
 </template>

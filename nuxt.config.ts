@@ -9,6 +9,13 @@ export default defineNuxtConfig({
     exposeLevel: 2,
     config: {},
     injectPosition: 'first',
-    viewer: true
-  }
-})
+    viewer: true,
+  },
+  runtimeConfig: {
+    apiSecret: process.env.CURRENCY_API_KEY,
+    public: {
+      apiSecret: process.env.CURRENCY_API_KEY,
+      apiBase: process.env.BASE_URL,
+    },
+  },
+});
